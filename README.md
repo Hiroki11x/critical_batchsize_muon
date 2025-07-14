@@ -1,6 +1,6 @@
 # Analysis of Muon's Convergence and Critical Batch Size
 
-This repository contains the source code for the experiments and analysis presented in the paper "Analysis of Muon's Convergence and Critical Batch Size".
+This repository contains the source code for the experiments and analysis presented in the paper "Analysis of Muon's Convergence and Critical Batch Size". [arxiv](https://arxiv.org/abs/2507.01598)
 
 ## Abstract
 
