@@ -1,6 +1,6 @@
 # Analysis of Muon's Convergence and Critical Batch Size
 
-This repository contains the source code for the experiments and analysis presented in the paper "Analysis of Muon's Convergence and Critical Batch Size". [arxiv](https://arxiv.org/abs/2507.01598)
+This repository contains the source code for the experiments and analysis presented in the paper "Analysis of Muon's Convergence and Critical Batch Size".
 
 ## Abstract
 
@@ -32,14 +32,4 @@ sbatch run_muon_with_nesterov_exp1.sh
 ### Reproducing Figures
 The Jupyter notebooks in the `notebook/` directory can be used to reproduce the figures and analysis from the paper.
 
-## Citation
-If you use this code or our findings in your research, please cite our paper:
 
-```
-@article{naoki2025analysis,
-  title={Analysis of Muon's Convergence and Critical Batch Size},
-  author={Naoki Sato and Hiroki Naganuma and Hideaki Iiduka},
-  journal={arxiv},
-  year={2025}
-}
-```
