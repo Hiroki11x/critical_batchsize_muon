@@ -1,6 +1,6 @@
-# Convergence Bounds and Critical Batch Size of Muon
+# Analysis of Muon's Convergence and Critical Batch Size
 
-This repository contains the source code for the experiments and analysis presented in the paper "Convergence Bounds and Critical Batch Size of Muon".
+This repository contains the source code for the experiments and analysis presented in the paper "Analysis of Muon's Convergence and Critical Batch Size".
 
 ## Abstract
 
@@ -28,8 +28,3 @@ For example, to run an experiment on the Slurm cluster:
 cd slurm_cluster/cbs_1gpu/
 sbatch run_muon_with_nesterov_exp1.sh
 ```
-
-### Reproducing Figures
-The Jupyter notebooks in the `notebook/` directory can be used to reproduce the figures and analysis from the paper.
-
-

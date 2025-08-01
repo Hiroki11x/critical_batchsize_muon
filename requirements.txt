@@ -1,0 +1,15 @@
+torch
+torchvision
+wandb
+numpy
+timm
+jupyter
+jupyterlab
+notebook
+matplotlib
+seaborn
+pandas
+scipy
+scikit-learn
+tqdm
+ipywidgets
