@@ -10,8 +10,19 @@ This paper presents a theoretical analysis of Muon, a new optimizer that respect
 
 We also conducted additional experiments on Llama3 160M on C4 Dataset. The results are shown in the following figure.
 
-![Llama3 160M on C4 Dataset](./figures/llama3_160m_c4_dataset.png)
+### Results
 
+![Llama3 160M on C4 Dataset](./exp_results/llama3_160m/beta_ablation/loss_vs_bs_wd0.01_nest1.pdf)
+
+### Settings
+
+We used the following settings:
+
+- Model: Llama3 160M
+- Dataset: C4 Dataset
+- Batch size: 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192
+
+### Code
 
 ## Repository Structure
 
