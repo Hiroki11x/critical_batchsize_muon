@@ -12,7 +12,89 @@ We also conducted additional experiments on Llama3 160M on C4 Dataset. The resul
 
 ### Results
 
-![Llama3 160M on C4 Dataset](./exp_results/llama3_160m/beta_ablation/loss_vs_bs_wd0.01_nest1.pdf)
+<div style="display: flex; flex-wrap: wrap; gap: 4px;">
+  <figure style="margin: 0; text-align: center; flex: 1;">
+    <img
+      src="./exp_results/llama3_160m/loss/oneplot_loss_vs_batch.png"
+      alt="Loss vs Batch Size"
+      style="width: auto; height: auto;"
+    />
+    <figcaption>Loss vs Batch Size</figcaption>
+  </figure>
+  <figure style="margin: 0; text-align: center; flex: 1;">
+    <img
+      src="./exp_results/llama3_160m/critical_batchsize/oneplot_sfo_vs_batch.png"
+      alt="SFO Complexity vs Batch Size"
+      style="width: auto; height: auto;"
+    />
+    <figcaption>SFO Complexity vs Batch Size</figcaption>
+  </figure>
+</div>
+
+Both in terms of loss and SFO, Muon outperforms AdamW.
+This performance gap becomes more pronounced with larger batch sizes.
+In this experimental setting, incorporating Nesterov momentum or weight decay did not lead to significant improvements in either SFO or loss.
+
+
+<div style="display: flex; flex-wrap: wrap; gap: 4px;">
+
+  <figure style="margin: 0; text-align: center; flex: 1;">
+    <img
+      src="./exp_results/llama3_160m/loss/loss_vs_bs_wd0_nest0.png"
+      alt="Loss vs Batch Size (WD=0, Nesterov=False)"
+      style="width: auto; height: auto;"
+    />
+    <figcaption>Loss vs Batch Size (WD=0, Nesterov=False)</figcaption>
+  </figure>
+  <figure style="margin: 0; text-align: center; flex: 1;">
+    <img
+      src="./exp_results/llama3_160m/loss/loss_vs_bs_wd0_nest1.png"
+      alt="Loss vs Batch Size (WD=0, Nesterov=True)"
+      style="width: auto; height: auto;"
+    />
+    <figcaption>Loss vs Batch Size (WD=0, Nesterov=True)</figcaption>
+  </figure>
+
+  <figure style="margin: 0; text-align: center; flex: 1;">
+    <img
+      src="./exp_results/llama3_160m/critical_batchsize/sfo_vs_bs_wd0_nest0.png"
+      alt="SFO Complexity vs Batch Size (WD=0, Nesterov=False)"
+      style="width: auto; height: auto;"
+    />
+    <figcaption>SFO Complexity vs Batch Size (WD=0, Nesterov=False)</figcaption>
+  </figure>
+  <figure style="margin: 0; text-align: center; flex: 1;">
+    <img
+      src="./exp_results/llama3_160m/critical_batchsize/sfo_vs_bs_wd0_nest1.png"
+      alt="SFO Complexity vs Batch Size (WD=0, Nesterov=True)"
+      style="width: auto; height: auto;"
+    />
+    <figcaption>SFO Complexity vs Batch Size (WD=0, Nesterov=True)</figcaption>
+  </figure>
+</div>
+
+Experimental results show that a Muon momentum (β) of 0.95 yields the most favorable loss and SFO. As the momentum decreases, the critical batch size tends to increase; conversely, as the momentum increases, the critical batch size tends to decrease. However, excessively large or small momentum values do not lead to improvements in either loss or SFO.
+
+<!-- WIP
+<div style="display: flex; flex-wrap: wrap; gap: 20px;">
+  <figure style="margin: 0; text-align: center; flex: 1;">
+    <img
+      src="./exp_results/llama3_160m/loss/loss_vs_bs_wd0.01_nest0.png"
+      alt="Loss vs Batch Size (WD=0, Nesterov=False)"
+      style="width: auto; height: auto;"
+    />
+    <figcaption>Loss vs Batch Size (WD=0, Nesterov=False)</figcaption>
+  </figure>
+  <figure style="margin: 0; text-align: center; flex: 1;">
+    <img
+      src="./exp_results/llama3_160m/loss/loss_vs_bs_wd0.01_nest1.png"
+      alt="Loss vs Batch Size (WD=0, Nesterov=True)"
+      style="width: auto; height: auto;"
+    />
+    <figcaption>Loss vs Batch Size (WD=0, Nesterov=True)</figcaption>
+  </figure>
+</div> -->
+
 
 ### Settings
 
