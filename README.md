@@ -21,13 +21,9 @@ This performance gap becomes more pronounced with larger batch sizes.
 In this experimental setting, incorporating Nesterov momentum or weight decay did not lead to significant improvements in either SFO or loss.
 
 
-| Loss (WD=0, Nesterov=False) | Loss (WD=0, Nesterov=True) |
-|:---------------------------:|:--------------------------:|
-| ![Loss vs Batch Size (WD=0, Nesterov=False)](exp_results/llama3_160m/loss/loss_vs_bs_wd0_nest0.png) | ![Loss vs Batch Size (WD=0, Nesterov=True)](exp_results/llama3_160m/loss/loss_vs_bs_wd0_nest1.png) |
-
-| SFO (WD=0, Nesterov=False) | SFO (WD=0, Nesterov=True) |
-|:--------------------------:|:-------------------------:|
-| ![SFO Complexity vs Batch Size (WD=0, Nesterov=False)](exp_results/llama3_160m/critical_batchsize/sfo_vs_bs_wd0_nest0.png) | ![SFO Complexity vs Batch Size (WD=0, Nesterov=True)](exp_results/llama3_160m/critical_batchsize/sfo_vs_bs_wd0_nest1.png) |
+| Loss (WD=0, Nesterov=False) | Loss (WD=0, Nesterov=True) |SFO (WD=0, Nesterov=False) | SFO (WD=0, Nesterov=True) |
+|:---------------------------:|:--------------------------:|:--------------------------:|:-------------------------:|
+| ![Loss vs Batch Size (WD=0, Nesterov=False)](exp_results/llama3_160m/loss/loss_vs_bs_wd0_nest0.png) | ![Loss vs Batch Size (WD=0, Nesterov=True)](exp_results/llama3_160m/loss/loss_vs_bs_wd0_nest1.png) | ![SFO Complexity vs Batch Size (WD=0, Nesterov=False)](exp_results/llama3_160m/critical_batchsize/sfo_vs_bs_wd0_nest0.png) | ![SFO Complexity vs Batch Size (WD=0, Nesterov=True)](exp_results/llama3_160m/critical_batchsize/sfo_vs_bs_wd0_nest1.png) |
 
 Experimental results show that a Muon momentum (β) of 0.95 yields the most favorable loss and SFO. As the momentum decreases, the critical batch size tends to increase; conversely, as the momentum increases, the critical batch size tends to decrease. However, excessively large or small momentum values do not lead to improvements in either loss or SFO.
 
