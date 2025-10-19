@@ -55,6 +55,7 @@ We used the following settings:
 - Model: Llama3 160M
 - Dataset: C4 Dataset
 - Batch size: 64, 128, 256, 512, 1024, 2048, 4096, 8192
+- Sequence length: 2048
 
 ### Code
 
