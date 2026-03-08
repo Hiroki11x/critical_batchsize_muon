@@ -165,15 +165,15 @@ If your gpu count per node is not 8, adjust `--nproc_per_node` in the torchrun c
 
 We provide a detailed look into the parallelisms and optimizations available in `torchtitan`, along with summary advice on when to use various techniques.
 
-[TorchTitan: One-stop PyTorch native solution for production ready LLM pre-training](https://openreview.net/forum?id=SFN6Wm7YBI)
+[Anonymous submission](https://example.com/anonymous-submission)
 ```
 @inproceedings{
-   liang2025torchtitan,
-   title={TorchTitan: One-stop PyTorch native solution for production ready {LLM} pretraining},
-   author={Wanchao Liang and Tianyu Liu and Less Wright and Will Constable and Andrew Gu and Chien-Chin Huang and Iris Zhang and Wei Feng and Howard Huang and Junjie Wang and Sanket Purandare and Gokul Nadathur and Stratos Idreos},
+   anonymous2025submission,
+   title={Anonymous submission},
+   author={Anonymous},
    booktitle={The Thirteenth International Conference on Learning Representations},
    year={2025},
-   url={https://openreview.net/forum?id=SFN6Wm7YBI}
+   url={https://example.com/anonymous-submission}
 }
 ```
 

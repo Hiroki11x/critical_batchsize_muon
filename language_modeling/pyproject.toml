@@ -6,7 +6,7 @@ readme = "README.md"
 requires-python = ">=3.10"
 license = {file = "LICENSE"}
 authors = [
-    { name = "PyTorch Team", email = "packages@pytorch.org" },
+    { name = "Anonymous", email = "anonymous@example.com" },
 ]
 keywords = ["pytorch", "training", "llm"]
 dependencies = [

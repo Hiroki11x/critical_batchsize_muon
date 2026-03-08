@@ -10,7 +10,7 @@ This paper presents a theoretical analysis of Muon, a new optimizer that respect
 
 We used the following settings:
 
-- Model: Llama3 160M
+- Model: Llama3 320M
 - Dataset: C4 Dataset
 - Batch size: 64, 128, 256, 512, 1024, 2048, 4096, 8192
 - Sequence length: 2048
